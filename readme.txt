@@ -9,15 +9,16 @@ Once score is 10, have a screen that says HAPPY BIRTHDAY in big letters. Flashes
 
 ____________TO DO:________________
 
-1 set background pic
-2 make varibles for score and hp
-3 display score and hp
+_1 set background color
 
-4 get pic of asteroid
-5 write class for asteroid(make it move)
+_2 get pic of asteroid
+3 write class for asteroid(make it move)
 
-6 get pic of spaceship
-7 write class for spaceship(move <-- and -->)
+4 get pic of spaceship
+5 write class for spaceship(move <-- and -->)
+
+6 make varibles for score and hp
+7 display score and hp
 
 8 write get hit function
 
