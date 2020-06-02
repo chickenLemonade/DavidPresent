@@ -1,4 +1,6 @@
 import pygame
+from pygame.locals import *
+from asteroid import *
 
 pygame.init()
 
@@ -14,6 +16,9 @@ screen = pygame.display.set_mode(screen_size)
 #color of background
 color = (8, 8, 105)
 
+#asteroids created
+asteroids = pygame.sprite.Group() 
+
 # game code
 def main():
   #while true == will always run
@@ -21,6 +26,12 @@ def main():
 
     #makes background color
     screen.fill(color)
+
+    for event in pygame.event.get():
+      if event.type == quit:
+        sys.exit()
+      if event.type == MOUSEBUTTONDOWN:
+          asteroids.add(Asteroid(event.pos))
 
     #updates it
     pygame.display.flip()
