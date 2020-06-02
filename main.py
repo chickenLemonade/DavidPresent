@@ -32,6 +32,12 @@ def main():
         sys.exit()
       if event.type == MOUSEBUTTONDOWN:
           asteroids.add(Asteroid(event.pos))
+      
+    
+    for asteroid in asteroids:
+      asteroid.update()
+    for asteroid in asteroids:
+      asteroid.draw(screen)
 
     #updates it
     pygame.display.flip()
